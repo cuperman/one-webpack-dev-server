@@ -17,7 +17,7 @@
     "url": "https://github.com/cuperman/one-webpack-dev-server/issues"
   },
   "homepage": "https://github.com/cuperman/one-webpack-dev-server#readme",
-  "dependencies": {
+  "devDependencies": {
     "app-module-path": "^2.2.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
