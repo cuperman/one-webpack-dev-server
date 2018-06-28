@@ -1,0 +1,15 @@
+{
+  "name": "hello_world",
+  "version": "1.0.0",
+  "description": "Hello World app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jeff Cooper",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  }
+}
