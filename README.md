@@ -26,7 +26,7 @@ Then connect to [http://localhost:8080/some-repo](http://localhost:8080/some-rep
 
 ## Dependency management
 
-All projects have access to node modules installed in the root (this repo), but unique dependencies can be installed in each project. Node modules are loaded from the root and the project node_module directories.
+All projects have access to node modules installed in the root (this repo), but unique dependencies can be installed in each project. Node modules are loaded from the root and the project `node_module` directories.
 
 ```bash
 # allow react to be used in all projects
@@ -35,4 +35,17 @@ npm install --save react
 # install lodash to a specific project
 cd links/some-repo
 npm install --save lodash
+```
+
+## Project entry points
+
+If you have a package.json file in your project, the entry point will be determined by the `main` property.  Otherwise, the entry is assumed to be `index.js`.
+
+```json
+{
+  "name": "some-repo",
+  "version": "1.0.0",
+  "description": "Some awesome repo",
+  "main": "./src/main.js"
+}
 ```
